@@ -9,7 +9,7 @@ const seed = async () => {
     await mongoose.connect(process.env.MONGODB_URI);
     console.log('Connected to MongoDB');
 
-    // Clear existing data
+    // Clear existing dat
     await User.deleteMany({});
     await Doctor.deleteMany({});
     await EmergencyStatus.deleteMany({});
